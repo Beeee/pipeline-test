@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello WebSocket</title>
+    <link href="./webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./main.css" rel="stylesheet">
+    <script src="./webjars/jquery/jquery.min.js"></script>
+    <script src="./webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="./webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="./app.js"></script>
+</head>
+<body>
+<noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
+    enabled. Please enable
+    Javascript and reload this page!</h2></noscript>
+<div id="main-content" class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="connect">WebSocket connection:</label>
+                    <button id="connect" class="btn btn-default" type="submit">Connect</button>
+                    <button id="disconnect" class="btn btn-default" type="submit" disabled="disabled">Disconnect
+                    </button>
+                    <button id="start" class="btn btn-default" type="submit">Start</button>
+                    <button id="pause" class="btn btn-default" type="submit">Pause</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="btn-group">
+        <div>
+            <h1>Big Blind</h1>
+            <span id="bigblindssum" class="large"></span>
+        </div>
+        <div>
+            <h1>Small Blind</h1>
+            <span id="smallblindssum" class="large"></span>
+        </div>
+    </div>
+
+    <div id="nextraisediv">
+        <h1>Neste økning av blinds:</h1>
+        <span id="nextraise" class="large"></span>
+    </div>
+
+    <div id="clockdiv">
+        <h1>Countdown</h1>
+        <div>
+            <span class="hours"></span>
+            <div class="smalltext">Hours</div>
+        </div>
+        <div>
+            <span class="minutes"></span>
+            <div class="smalltext">Minutes</div>
+        </div>
+        <div>
+            <span class="seconds"></span>
+            <div class="smalltext">Seconds</div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
