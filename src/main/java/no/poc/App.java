@@ -9,6 +9,7 @@ public class App extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        System.out.println("Test");
         return application.sources(Config.class);
     }
 
