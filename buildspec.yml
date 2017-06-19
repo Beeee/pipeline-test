@@ -11,5 +11,5 @@ phases:
       - mvn package
 artifacts:
   files:
-   - target/**/*
+    - target/**/*
    discard-paths: yes
