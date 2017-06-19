@@ -9,7 +9,8 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
+      - mv target/pokerclock-1.0-SNAPSHOT.war pokerclock-1.0-SNAPSHOT.war
 artifacts:
   files:
-    - pokerclock-1.0-SNAPSHOT/**/*
-  base-directory: target
+    - pokerclock-1.0-SNAPSHOT.war
+    - .ebextensions/**/*
