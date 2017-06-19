@@ -11,4 +11,5 @@ phases:
       - mvn package
 artifacts:
   files:
-    - target/pokerclock-1.0-SNAPSHOT.war
+   - target/**/*
+   discard-paths: yes
