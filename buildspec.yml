@@ -12,4 +12,4 @@ phases:
 artifacts:
   files:
     - target/pokerclock-1.0-SNAPSHOT.war
-   discard-paths: yes
+  discard-paths: yes
